@@ -5,3 +5,9 @@
       debug:
         msg: "Hello World!"
 
+- name: test var
+  hosts: all
+  tasks:
+    - name: var debug
+      debug:
+        msg: "Message 1 : {{message1}}"
